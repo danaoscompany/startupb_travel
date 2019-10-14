@@ -7,3 +7,4 @@ $amount = $obj=>{'amount'};
 if ($externalID == "pulsa") {
     sendMessage("Selamat! Pembelian pulsa sebesar " . $amount . " sudah kami lakukan.");
 }
+echo "OK";
