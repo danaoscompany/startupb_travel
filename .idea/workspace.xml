@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fad0f770-8cad-4345-b3dd-fb30ca8c409c" name="Default Changelist" comment="" />
+    <list default="true" id="fad0f770-8cad-4345-b3dd-fb30ca8c409c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/change-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/change-password.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/check-user-exists-by-email.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check-user-exists-by-email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/check-user-exists.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check-user-exists.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/edit-profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/edit-profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/get-user-by-email.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/get-user-by-email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,89 +22,11 @@
       <executable />
     </execution>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>edit-voucher-title</find>
-      <find>verify-</find>
-      <find>open</find>
-      <find>topups</find>
-      <find>nominal</find>
-      <find>delete</find>
-      <find>view-order</find>
-      <find>delete-order</find>
-      <find>view-topup-buyer-name</find>
-      <find>.php</find>
-      <find>proof_img</find>
-      <find>userInfo</find>
-      <find>topup[</find>
-      <find>notfic</find>
-      <find>apakah anda</find>
-      <find>notificati</find>
-      <find>-active</find>
-      <find>delete-fund</find>
-      <find>edit-</find>
-      <find>delete-withdraw</find>
-      <find>topup</find>
-      <find>harga:</find>
-      <find>edit-withdraw-price</find>
-      <find>get</find>
-      <find>memperb</find>
-      <find>pending</find>
-      <find>verify</find>
-      <find>ubah</find>
-      <find>:</find>
-      <find>erify</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>AIzaSyCNA8fwTJhMu8ju9pdg08M5zBmninVPm5k</replace>
-      <replace>unbind().on(&quot;click</replace>
-      <replace>unbind()</replace>
-      <replace>-order-</replace>
-      <replace>map</replace>
-      <replace>http://&quot;+HOST+&quot;/img/map.png</replace>
-      <replace>Kendaraan</replace>
-      <replace>edit-vehicle</replace>
-      <replace>kongi_user_id</replace>
-      <replace>kongsi_user_id</replace>
-      <replace>kongsi_logged_in</replace>
-      <replace>session_id(&quot;kongsi&quot;);</replace>
-      <replace>admin[&quot;firstName&quot;]</replace>
-      <replace>admin[&quot;lastName&quot;]</replace>
-      <replace>&lt;div onclick=&quot;openDrivers()&quot; class=&quot;menu-item&quot;</replace>
-      <replace>driver</replace>
-      <replace>driver[</replace>
-      <replace>user</replace>
-      <replace>Ubah Informasi Pengguna</replace>
-      <replace>edit-driver</replace>
-      <replace>edit-bank</replace>
-      <replace>&lt;div style=&quot;margin-left: 10px;&quot;&gt;Top Up Pulsa&lt;/div&gt;</replace>
-      <replace>Pulsa</replace>
-      <replace>Data</replace>
-      <replace>edit-price</replace>
-      <replace>edit-withdraw</replace>
-      <replace>edit-referral</replace>
-      <replace>edit-voucher</replace>
-      <replace>view-fund</replace>
-      <replace>delete-fund</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\Dana\Documents\WebFiles\jossstreambe</dir>
-      <dir>C:\Users\Dana\Documents\WebFiles\jossstreambe\php</dir>
-      <dir>C:\Users\Dana\Documents\WebFiles\jossstreambe\js</dir>
-      <dir>$PROJECT_DIR$/php</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="212" />
-    <option name="y" value="113" />
-    <option name="width" value="972" />
-    <option name="height" value="688" />
   </component>
   <component name="ProjectId" id="1Q9NXG8mIxoxav7mEPndUqogbtK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -211,10 +142,28 @@
       <workItem from="1562834839944" duration="6371000" />
       <workItem from="1562853119031" duration="437000" />
       <workItem from="1567178891614" duration="592000" />
+      <workItem from="1569995947095" duration="627000" />
+      <workItem from="1570598613340" duration="1004000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
