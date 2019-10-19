@@ -27,7 +27,12 @@ if ($values && $values->num_rows > 0) {
 	return;
 }
 
-$sql = "INSERT INTO customer (google_user_id, email, phone, password, name) VALUES ('" . $googleUserID . "', '" . $email . "', '" . $phone . "', '" . $password . "', '" . $name . "')";
+// Get last user ID
+$lastUserID = $c->query("SELECT * FROM customer ORDER BY id DESC LIMIT 1")->fetch_assoc()["userid"];
+$lastUserID = intval(substr($lastUserID, 1, strlen($lastUserID)));
+$lastUserID++;
+
+$sql = "INSERT INTO customer (userid, google_user_id, email, phone, password, name) VALUES ('C" . $lastUserID . "', '" . $googleUserID . "', '" . $email . "', '" . $phone . "', '" . $password . "', '" . $name . "')";
 $c->query($sql);
 $userID = mysqli_insert_id($c);
 echo $userID;
