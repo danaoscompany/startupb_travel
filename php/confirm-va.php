@@ -1,14 +1,13 @@
 <?php
 include 'db.php';
 $data = file_get_contents("php://input");
-echo $data;
-return;
 $obj = json_decode($data, true);
 $externalID = $obj["external_id"];
 $row = $c->query("SELECT * FROM deposit WHERE trxid='" . $externalID . "'")->fetch_assoc();
 $date = date('Y-m-d H:i:s');
 $sql = "UPDATE deposit SET date_update='" . $date . "', status=1 WHERE trxid='" . $externalID . "'";
 $c->query($sql);
+return;
 $balance = $c->query("SELECT * FROM customer WHERE userid='" . $row["userid"] . "'")->fetch_assoc()["balance"];
 $balance += intval($obj["amount"]);
 $c->query("UPDATE customer SET balance=" . $balance . " WHERE userid='" . $row["userid"] . "'");
