@@ -3,6 +3,8 @@ include 'db.php';
 $data = file_get_contents("php://input");
 $obj = json_decode($data, true);
 $externalID = $obj["external_id"];
+echo $externalID;
+return;
 $row = $c->query("SELECT * FROM deposit WHERE trxid='" . $externalID . "'")->fetch_assoc();
 $date = date('Y-m-d H:i:s');
 $c->query("UPDATE deposit SET date_update='" . $date . "', status=1 WHERE id=" . $row["id"]);
