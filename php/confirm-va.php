@@ -11,25 +11,27 @@ $balance = intval($c->query("SELECT * FROM customer WHERE userid='" . $row["user
 $balance += intval($obj["amount"]);
 $c->query("UPDATE customer SET balance=" . $balance . " WHERE userid='" . $row["userid"] . "'");
 $content = array(
-            "en" => 'Click for more info'
+        "en" => 'Saldo Anda telah ditambahkan'
         );
 
     $fields = array(
-        'app_id' => "2936c66c-21d0-4ce4-9d24-801945b4340a",
+        'app_id' => "4b208b19-b68f-43a0-ba73-1ca51f013a4e",
         'included_segments' => array('All'),
         'data' => array(
-        	"data" => $data
+        	"name" => "Dana Prakoso"
         ),
         'large_icon' =>"ic_launcher_round.png",
         'contents' => $content
     );
 
     $fields = json_encode($fields);
+print("\nJSON sent:\n");
+print($fields);
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json; charset=utf-8',
-                                               'Authorization: Basic OWUwY2IyZjctMGU0OC00MGUyLTg1ZDItZGIyMjU2MTg1Mzdl'));
+                                               'Authorization: Basic NTc1ZjhmNGEtYTdkNC00NTA1LThlYjItMjRmZGFkYzgwODcw'));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, FALSE);
     curl_setopt($ch, CURLOPT_POST, TRUE);
