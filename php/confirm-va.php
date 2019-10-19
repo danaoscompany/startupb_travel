@@ -7,8 +7,6 @@ $row = $c->query("SELECT * FROM deposit WHERE trxid='" . $externalID . "'")->fet
 $date = date('Y-m-d H:i:s');
 $sql = "UPDATE deposit SET date_update='" . $date . "', status=1 WHERE trxid='" . $externalID . "'";
 $c->query($sql);
-echo $sql;
-return;
 $balance = intval($c->query("SELECT * FROM customer WHERE userid='" . $row["userid"] . "'")->fetch_assoc()["balance"]);
 $balance += intval($obj["amount"]);
 $c->query("UPDATE customer SET balance=" . $balance . " WHERE userid='" . $row["userid"] . "'");
