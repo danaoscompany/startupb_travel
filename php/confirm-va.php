@@ -9,7 +9,7 @@ $sql = "UPDATE deposit SET date_update='" . $date . "', status=1 WHERE trxid='" 
 $c->query($sql);
 echo $sql;
 return;
-$balance = $c->query("SELECT * FROM customer WHERE userid='" . $row["userid"] . "'")->fetch_assoc()["balance"];
+$balance = intval($c->query("SELECT * FROM customer WHERE userid='" . $row["userid"] . "'")->fetch_assoc()["balance"]);
 $balance += intval($obj["amount"]);
 $c->query("UPDATE customer SET balance=" . $balance . " WHERE userid='" . $row["userid"] . "'");
 $content = array(
