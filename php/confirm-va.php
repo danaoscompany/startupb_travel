@@ -6,6 +6,9 @@ $externalID = $obj["external_id"];
 $row = $c->query("SELECT * FROM deposit WHERE trxid='" . $externalID . "'")->fetch_assoc();
 $date = date('Y-m-d H:i:s');
 $c->query("UPDATE deposit SET date_update='" . $date . "', status=1 WHERE id=" . $row["id"]);
+$balance = $c->query("SELECT * FROM customer WHERE userid='" . $row["userid"] . "'")->fetch_assoc()["balance"];
+$balance += intval($obj["amount"]);
+$c->query("UPDATE customer SET balance=" . $balance . " WHERE userid='" . $row["userid"] . "'");
 $content = array(
             "en" => 'Click for more info',
             "id" => 'Klik untuk info lebih lanjut'
