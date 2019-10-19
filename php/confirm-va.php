@@ -10,8 +10,7 @@ $balance = $c->query("SELECT * FROM customer WHERE userid='" . $row["userid"] . 
 $balance += intval($obj["amount"]);
 $c->query("UPDATE customer SET balance=" . $balance . " WHERE userid='" . $row["userid"] . "'");
 $content = array(
-            "en" => 'Click for more info',
-            "id" => 'Klik untuk info lebih lanjut'
+            "en" => 'Click for more info'
         );
 
     $fields = array(
@@ -21,11 +20,7 @@ $content = array(
         	"data" => $data
         ),
         'large_icon' =>"ic_launcher_round.png",
-        'contents' => $content,
-        'headings' => array(
-            "en" => 'Your balance has been updated',
-            "id" => 'Deposit telah berhasil dilakukan'
-        )
+        'contents' => $content
     );
 
     $fields = json_encode($fields);
