@@ -22,7 +22,8 @@ $title = array(
         'app_id' => "4b208b19-b68f-43a0-ba73-1ca51f013a4e",
         'included_segments' => array('All'),
         'data' => array(
-        	"name" => "Dana Prakoso"
+            "type" => "funds_added",
+            "data" => $data
         ),
         'large_icon' =>"ic_launcher_round.png",
         'contents' => $content,
