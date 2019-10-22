@@ -2,7 +2,7 @@
 include 'db.php';
 $cityID = intval($_POST["city_id"]);
 $items = [];
-$results = $c->query("SELECT product_id, COUNT(*) FROM order_product_detail WHERE type='food' GROUP BY product_id ORDER BY COUNT(*) DESC LIMIT 10");
+$results = $c->query("SELECT product_id, COUNT(*) FROM order_product_detail WHERE type='goods' GROUP BY product_id ORDER BY COUNT(*) DESC LIMIT 10");
 while ($row = $results->fetch_assoc()) {
     $productID = intval($row["product_id"]);
     $product = $c->query("SELECT * FROM partner_product WHERE id=" . $productID)->fetch_assoc();
