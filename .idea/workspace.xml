@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fad0f770-8cad-4345-b3dd-fb30ca8c409c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/change-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/change-password.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/check-user-exists-by-email.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check-user-exists-by-email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/check-user-exists.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check-user-exists.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/edit-profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/edit-profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/get-user-by-email.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/get-user-by-email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/send-message.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/send-message.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +137,7 @@
       <workItem from="1567178891614" duration="592000" />
       <workItem from="1569995947095" duration="627000" />
       <workItem from="1570598613340" duration="1004000" />
+      <workItem from="1571856613329" duration="7000" />
     </task>
     <servers />
   </component>
