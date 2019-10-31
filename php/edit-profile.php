@@ -6,4 +6,6 @@ $phone = $_POST["phone"];
 $email = $_POST["email"];
 $city = $_POST["city"];
 $profilePicture = $_POST["profile_picture"];
-$c->query("UPDATE customer SET name='" . $name . "', phone='" . $phone . "', email='" . $email . "', city='" . $city . "', profile_picture='" . $profilePicture . "' WHERE id=" . $id);
+$sql = "UPDATE customer SET name='" . $name . "', phone='" . $phone . "', email='" . $email . "', city='" . $city . "', picture='" . $profilePicture . "' WHERE id=" . $id;
+$c->query($sql);
+echo $sql;
