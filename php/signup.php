@@ -35,5 +35,5 @@ $lastUserID++;
 $sql = "INSERT INTO customer (userid, google_user_id, email, phone, password, name) VALUES ('C" . $lastUserID . "', '" . $googleUserID . "', '" . $email . "', '" . $phone . "', '" . $password . "', '" . $name . "')";
 pg_query($c, $sql);
 $userID = mysqli_insert_id($c);
-echo $userID;
-//echo $sql;
+//echo $userID;
+echo $sql;

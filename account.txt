@@ -1,4 +1,18 @@
-Github
+Email: primajaya.tbr@gmail.com
+Password: #$primajaya2019
+Nama project: Amang Ojek
 
-Email: kongsikongsideveloper@gmail.com
-Password: HelloWorld@123#
+XENDIT
+Email: idvirtualassistant1@gmail.com
+Password: HaloDunia123
+
+PostgreSQL:
+Username: startupb_travel
+Password: HelloWorld123
+
+pgAdmin4:
+Email: danaoscompany@gmail.com
+Password: HelloWorld123
+
+VM Instance:
+IP: 34.68.101.89
