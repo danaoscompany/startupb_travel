@@ -3,9 +3,9 @@ include 'db.php';
 $name = $_POST["name"];
 $params = $_POST["params"];
 $items = [];
-$results = $c->query("SELECT * FROM " . $name . " " . $params);
+$results = pg_query($c, "SELECT * FROM " . $name . " " . $params);
 if ($results && $results->num_rows > 0) {
-	while ($row = $results->fetch_assoc()) {
+	while ($row = pg_fetch_assoc($results)) {
 		array_push($items, $row);
 	}
 }

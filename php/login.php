@@ -2,8 +2,8 @@
 include 'db.php';
 $email = $_POST["email"];
 $password = $_POST["password"];
-$values = $c->query("SELECT * FROM customer WHERE email='" . $email . "'");
-if ($values && $values->num_rows > 0) {
+$values = pg_query($c, "SELECT * FROM customer WHERE email='" . $email . "'");
+if (pg_num_rows($values) > 0) {
 	$row = $values->fetch_assoc();
 	if ($row["password"] != $password) {
 		echo -2;

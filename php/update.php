@@ -4,4 +4,4 @@ $tableName = $_POST["name"];
 $id = intval($_POST["id"]);
 $columnName = $_POST["col_name"];
 $columnValue = $_POST["col_value"];
-$c->query("UPDATE " . $tableName . " SET " . $columnName . "='" . $columnValue . "' WHERE id=" . $id);
+pg_query($c, "UPDATE " . $tableName . " SET " . $columnName . "='" . $columnValue . "' WHERE id=" . $id);

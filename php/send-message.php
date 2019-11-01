@@ -12,7 +12,7 @@ if (strlen($body) > 30) {
 $date = $_POST["date"];
 $accessToken = $_POST["access_token"];
 $sql = "INSERT INTO message (userid, opponent, message, image, type, `read`, date_insert) VALUES ('" . $senderID . "', '" . $receiverID . "', '" . $message . "', '" . $img . "', 1, 0, '" . $date . "')";
-$c->query($sql);
+pg_query($c, $sql);
 /*$curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, "https://fcm.googleapis.com/v1/projects/amang-ojek-255300/messages:send");
 $header = array();

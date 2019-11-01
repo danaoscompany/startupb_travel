@@ -4,9 +4,9 @@ $name = $_POST["name"];
 $idName = $_POST["id_name"];
 $id = intval($_POST["id"]);
 $items = [];
-$results = $c->query("SELECT * FROM " . $name . " WHERE " . $idName . "=" . $id);
+$results = pg_query($c, "SELECT * FROM " . $name . " WHERE " . $idName . "=" . $id);
 if ($results && $results->num_rows > 0) {
-	while ($row = $results->fetch_assoc()) {
+	while ($row = pg_fetch_assoc($results)) {
 		array_push($items, $row);
 	}
 }

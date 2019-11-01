@@ -4,4 +4,4 @@ $name = $_POST["name"];
 $idName = $_POST["id_name"];
 $id = intval($_POST["id"]);
 $items = [];
-$c->query("DELETE FROM " . $name . " WHERE " . $idName . "=" . $id);
+pg_query($c, "DELETE FROM " . $name . " WHERE " . $idName . "=" . $id);

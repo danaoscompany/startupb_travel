@@ -3,13 +3,13 @@ include 'db.php';
 $data = file_get_contents("php://input");
 $obj = json_decode($data, true);
 $externalID = $obj["external_id"];
-$row = $c->query("SELECT * FROM deposit WHERE trxid='" . $externalID . "'")->fetch_assoc();
+$row = pg_query($c, "SELECT * FROM deposit WHERE trxid='" . $externalID . "'")->fetch_assoc();
 $date = date('Y-m-d H:i:s');
 $sql = "UPDATE deposit SET date_update='" . $date . "', status=1 WHERE trxid='" . $externalID . "'";
-$c->query($sql);
-$balance = intval($c->query("SELECT * FROM customer WHERE userid='" . $row["userid"] . "'")->fetch_assoc()["balance"]);
+pg_query($c, $sql);
+$balance = intval(pg_query($c, "SELECT * FROM customer WHERE userid='" . $row["userid"] . "'")->fetch_assoc()["balance"]);
 $balance += intval($obj["amount"]);
-$c->query("UPDATE customer SET balance=" . $balance . " WHERE userid='" . $row["userid"] . "'");
+pg_query($c, "UPDATE customer SET balance=" . $balance . " WHERE userid='" . $row["userid"] . "'");
 $content = array(
         "en" => 'Click this notification for more info',
         "id" => 'Klik untuk info lebih lanjut'
